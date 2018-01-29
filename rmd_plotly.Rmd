@@ -1,0 +1,28 @@
+---
+title: "Rmd and Plotly"
+author: "Andrew Norgan"
+date: "1/29/2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+```
+
+## R Markdown and Plotly
+
+Thank you for checking out my fantastic presentation.
+
+This presentation includes:
+
+- A Plotly Plot
+- Nothing Else 
+
+## The Plot
+
+The Date: January 29, 2018
+```{r, echo=FALSE}
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+```
